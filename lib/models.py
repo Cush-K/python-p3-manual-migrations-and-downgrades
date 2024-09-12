@@ -23,7 +23,7 @@ class Student(Base):
     name = Column(String(), index=True)
     email = Column(String(55))
     grade = Column(Integer())
-    birthday = Column(DateTime())
+    birthdate = Column(DateTime())
     enrolled_date = Column(DateTime(), default=datetime.now())
 
     def __repr__(self):
